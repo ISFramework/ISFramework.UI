@@ -1,0 +1,54 @@
+﻿[
+  {
+    "outputFile": "bootstrap/stylesheets/_bootstrap.css",
+    "inputFile": "bootstrap/stylesheets/_bootstrap.scss"
+  },
+  {
+    "outputFile": "bootstrap/stylesheets/bootstrap.css",
+    "inputFile": "bootstrap/stylesheets/bootstrap.scss"
+  },
+  {
+    "outputFile": "bootstrap/bootstrap.css",
+    "inputFile": "bootstrap/bootstrap.scss"
+  },
+  {
+    "outputFile": "bootstrap-rtl/bootstrap.css",
+    "inputFile": "bootstrap-rtl/bootstrap.scss"
+  },
+  {
+    "outputFile": "bootstrap/bootstrap-rtl.css",
+    "inputFile": "bootstrap/bootstrap-rtl.scss"
+  },
+  {
+    "outputFile": "EsComponent/Textbox/esTextbox.css",
+    "inputFile": "EsComponent/Textbox/esTextbox.scss"
+  },
+  {
+    "outputFile": "EsTheme/Default/DefaultTheme.css",
+    "inputFile": "EsTheme/Default/DefaultTheme.scss"
+  },
+  {
+    "outputFile": "EsTheme/Default/esTheme.css",
+    "inputFile": "EsTheme/Default/esTheme.scss"
+  },
+  {
+    "outputFile": "EsTheme/Default/bsTheme.css",
+    "inputFile": "EsTheme/Default/bsTheme.scss"
+  },
+  {
+    "outputFile": "EsComponent/Textbox/_esTextboxLtr.css",
+    "inputFile": "EsComponent/Textbox/_esTextboxLtr.scss"
+  },
+  {
+    "outputFile": "EsComponent/Textbox/_esTextboxRtl.css",
+    "inputFile": "EsComponent/Textbox/_esTextboxRtl.scss"
+  },
+  {
+    "outputFile": "EsComponent/Textbox/esTextboxLtr.css",
+    "inputFile": "EsComponent/Textbox/esTextboxLtr.scss"
+  },
+  {
+    "outputFile": "EsComponent/Textbox/esTextboxRtl.css",
+    "inputFile": "EsComponent/Textbox/esTextboxRtl.scss"
+  }
+]

@@ -1,0 +1,133 @@
+﻿.es-text-input-wrapper {
+    position: relative;
+
+    &.es-icon-placeholder-right {
+        @if $direction ==ltr {
+            input.form-control {
+                padding-right: 30px;
+            }
+
+            .es-icon-placeholder {
+                right: 15px;
+            }
+        }
+        @else {
+            input.form-control {
+                padding-left: 30px;
+            }
+
+            .es-icon-placeholder {
+                left: 15px;
+            }
+        }
+    }
+
+    &.es-icon-placeholder-left {
+        @if $direction ==ltr {
+            input.form-control {
+                padding-left: 30px;
+            }
+
+            .es-icon-placeholder {
+                left: 0;
+            }
+        }
+        @else {
+            input.form-control {
+                padding-right: 30px;
+            }
+
+            .es-icon-placeholder {
+                right: 15px;
+            }
+        }
+    }
+
+    .es-icon-placeholder {
+        color: rgb(194, 202, 216);
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        transform: translate(50%,50%);
+    }
+}
+
+.input-group .es-text-input-wrapper:not(:first-child):not(:last-child) > .form-control {
+    border-radius: 0;
+}
+.input-group-lg > .es-text-input-wrapper {
+    > .form-control {
+        height: 46px;
+        font-size: 18px;
+        line-height: 1.3333333;
+        border-radius: 6px;
+    }
+
+    &.es-icon-placeholder-left {
+        @if $direction == ltr {
+            input.form-control {
+                padding-left: 35px;
+            }
+
+            .es-icon-placeholder {
+                left: 10px;
+            }
+        }
+        @else {
+            input.form-control {
+                padding-right: 35px;
+            }
+
+            .es-icon-placeholder {
+                right: 10px;
+            }
+        }
+    }
+
+    > .es-icon-placeholder {
+        font-size: large;
+        color: rgb(194, 202, 216);
+        position: absolute;
+        z-index: 999;
+        top: 15px;
+        transform: none;
+    }
+}
+
+.input-group-sm > .es-text-input-wrapper {
+    > .form-control {
+        height: 30px;
+        font-size: 12px;
+        line-height: 1.5;
+        border-radius: 3px;
+    }
+
+    &.es-icon-placeholder-left {
+        @if $direction == ltr {
+            input.form-control {
+                padding-left: 25px;
+            }
+
+            .es-icon-placeholder {
+                left: 5px;
+            }
+        }
+        @else {
+            input.form-control {
+                padding-right: 25px;
+            }
+
+            .es-icon-placeholder {
+                right: 6px;
+            }
+        }
+    }
+    > .es-icon-placeholder {
+        font-size: small;
+        color: rgb(194, 202, 216);
+        position: absolute;
+        z-index: 999;
+        top: 8px;
+        transform: none;
+    }
+} 
