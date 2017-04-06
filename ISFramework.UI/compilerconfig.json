@@ -50,5 +50,9 @@
   {
     "outputFile": "EsComponent/Textbox/esTextboxRtl.css",
     "inputFile": "EsComponent/Textbox/esTextboxRtl.scss"
+  },
+  {
+    "outputFile": "EsComponent/panel/esPanel.css",
+    "inputFile": "EsComponent/panel/esPanel.scss"
   }
 ]
