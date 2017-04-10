@@ -1,0 +1,143 @@
+﻿.checkbox {
+  direction: rtl;
+  display: inline-block;
+  position: relative;
+  padding-right: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  .checkbox.checkbox-disabled, .checkbox.checkbox-disabled {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    cursor: not-allowed; }
+  .checkbox > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    filter: alpha(opacity=0); }
+  .checkbox > span {
+    border-radius: 2px;
+    border: 1px solid transparent;
+    position: absolute;
+    top: 1px;
+    right: 0;
+    height: 18px;
+    width: 18px;
+    background: #E6E6E6; }
+  .checkbox > span:after {
+    content: '';
+    position: absolute;
+    display: none; }
+  .checkbox > input:checked ~ span,
+  .checkbox > input:checked ~ span {
+    webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background: #d9d9d9; }
+
+.checkbox:hover > input:not([disabled]) ~ span,
+.checkbox > input:focus ~ span {
+  background: #d9d9d9;
+  webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.checkbox > input:checked ~ span:after {
+  display: block; }
+
+.checkbox:hover > input:not([disabled]):checked ~ span,
+.checkbox > input:checked ~ span {
+  webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  background: #d9d9d9; }
+
+.checkbox > input:disabled ~ span {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  pointer-events: none; }
+
+.checkbox.radio-outline > span,
+.checkbox.checkbox-outline > span {
+  border: 1px solid #d9d9d9;
+  background: none; }
+
+.checkbox.radio-outline:hover > input:not([disabled]) ~ span,
+.checkbox.radio-outline > input:focus ~ span,
+.checkbox.checkbox-outline:hover > input:not([disabled]) ~ span,
+.checkbox.checkbox-outline > input:focus ~ span {
+  border: 1px solid #d9d9d9;
+  background: none; }
+
+.checkbox.radio-outline > input:checked ~ span,
+.checkbox.checkbox-outline > input:checked ~ span {
+  border: 1px solid #d9d9d9;
+  background: none; }
+
+.checkbox.radio-outline:hover > input:not([disabled]):checked ~ span,
+.checkbox.radio-outline > input:checked ~ span,
+.checkbox.checkbox-outline:hover > input:not([disabled]):checked ~ span,
+.checkbox.checkbox-outline > input:checked ~ span {
+  border: 1px solid #d9d9d9;
+  background: none; }
+
+.checkbox > span:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #888888;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg); }
+
+.checkbox > input:disabled ~ span:after {
+  border-color: #888888; }
+
+.form-inline .checkbox {
+  margin-left: 15px;
+  margin-right: 15px; }
+
+th > .checkbox.checkbox-single,
+td > .checkbox.checkbox-single {
+  right: -5px; }
+
+.checkbox-list,
+.radio-list {
+  padding: 10px 0; }
+
+.form-horizontal .form-group .checkbox-list,
+.form-horizontal .form-group .radio-list {
+  padding-top: 0; }
+
+.checkbox-list .checkbox,
+.radio-list .checkbox {
+  display: block; }
+
+.checkbox-inline,
+.radio-inline {
+  padding: 10px 0; }
+
+.form-horizontal .form-group .checkbox-inline,
+.form-horizontal .form-group .radio-inline {
+  padding-top: 8px; }
+
+.checkbox-inline .checkbox,
+.radio-inline .checkbox {
+  display: inline-block;
+  margin-right: 15px; }
+
+.checkbox-inline .checkbox:last-child,
+.radio-inline .checkbox:last-child {
+  margin-right: 0; }
+
