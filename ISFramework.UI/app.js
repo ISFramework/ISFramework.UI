@@ -1,4 +1,14 @@
-﻿var app = angular.module('app', ['esPanel','esTextbox']);
+﻿var app = angular.module('app',
+    [
+        'esPanel',
+        'esTextbox',
+        'esCheckbox',
+        'ui.router'
+    ]);
+app.config(['$urlRouterProvider','$stateProvider', function ($urlRouterProvider, $stateProvider) {
+    $urlRouterProvider.otherwise("/panelDemo");
+}]);
+
 app.run(function ($rootScope) {
     $rootScope.direction = 'ltr';
 });

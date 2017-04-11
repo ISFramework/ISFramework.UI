@@ -6,6 +6,7 @@
     <title>Simple Admin - Bootsnipp.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link ng-href="bootstrap/css/{{ direction == 'ltr' ? 'bootstrap' : 'bootstrap-rtl' }}.css" rel="stylesheet" />
+    <link ng-href="EsComponent/checkbox/esCheckbox{{ direction == 'ltr' ? 'Ltr' : 'Rtl' }}.min.css" rel="stylesheet" />
     <link href="layout.css" rel="stylesheet" />
     
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -115,13 +116,14 @@
             </div>
         </div>
         <div class="col-md-10 content">
-            <div class="panel panel-default">
+            <div ui-view></div>
+            <!--<div class="panel panel-default">
                 <div class="panel-heading">
                     Dashboard
                 </div>
                 <div class="panel-body">
                 </div>
-            </div>
+            </div>-->
         </div>
         <footer class="pull-left footer">
             <p class="col-md-12">
@@ -131,9 +133,12 @@
         </footer>
     </div>
     <script src="bower_components/angularjs/angular.js"></script>
+    <script src="bower_components/ui-router/release/angular-ui-router.js"></script>
     <script src="EsComponent/Textbox/esTextbox.js"></script>
     <script src="EsComponent/panel/esPanel.js"></script>
+    <script src="EsComponent/checkbox/esCheckbox.js"></script>
     <script src="app.js"></script>
+    <script src="app/panelDemo/module.js"></script>
     <script type="text/javascript">
         $(function () {
             $('.navbar-toggle-sidebar').click(function () {

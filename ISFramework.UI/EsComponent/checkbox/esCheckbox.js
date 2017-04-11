@@ -1,6 +1,6 @@
 ﻿var checkboxModule = angular.module('esCheckbox', []);
 
-app.directive('esCheckbox', ["$compile",
+checkboxModule.directive('esCheckbox', ["$compile",
     function ($compile) {
         return {
             restrict: 'A',
