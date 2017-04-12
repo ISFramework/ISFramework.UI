@@ -6,7 +6,7 @@
         'ui.router'
     ]);
 app.config(['$urlRouterProvider','$stateProvider', function ($urlRouterProvider, $stateProvider) {
-    $urlRouterProvider.otherwise("/panelDemo");
+    $urlRouterProvider.otherwise("");
 }]);
 
 app.run(function ($rootScope) {
@@ -19,6 +19,15 @@ app.controller('layout', ['$rootScope', function ($rootScope) {
         }
         else {
             $rootScope.direction = 'rtl';
+
+        }
+    }
+    $rootScope.setDirection = function (direction) {
+        if ($rootScope.direction == direction) {
+            $rootScope.direction = direction;
+        }
+        else {
+            $rootScope.direction = direction;
 
         }
     }

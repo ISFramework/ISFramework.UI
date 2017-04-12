@@ -54,5 +54,13 @@
   {
     "outputFile": "EsComponent/panel/esPanel.css",
     "inputFile": "EsComponent/panel/esPanel.scss"
+  },
+  {
+    "outputFile": "app/layoutLtr.css",
+    "inputFile": "app/layoutLtr.scss"
+  },
+  {
+    "outputFile": "app/layoutRtl.css",
+    "inputFile": "app/layoutRtl.scss"
   }
 ]
