@@ -12,3 +12,5 @@
         vm.x = "111";
     }]);
 })(angular.module('app'));
+angular.bootstrap(document, ['app']);
+$("#document-loading").hide();

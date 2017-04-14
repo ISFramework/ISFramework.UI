@@ -32,3 +32,5 @@ app.controller('layout', ['$rootScope', function ($rootScope) {
         }
     }
 }]);
+
+

@@ -9,6 +9,6 @@
     }]);
     module.controller('panelDemo',[function () {
         var vm = this;
-        vm.x = "111";
+        vm.x = true;
     }]);
 })(angular.module('app'));
